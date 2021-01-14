@@ -1,0 +1,617 @@
+/* REGLAGES DE BASE */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 65%;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue {
+  color: #0065fc;
+  font-size: 1.5rem;
+}
+.euro {
+  font-weight: bold;
+}
+
+.flex-position {
+  display: flex;
+}
+
+.ghost {
+  display: none;
+}
+/* header */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+header img {
+  padding: 3rem 2rem;
+  width: 14rem;
+}
+header nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+nav a {
+  width: 16rem;
+  padding-top: 4.5rem;
+  text-align: center;
+  border-top: 0.2rem solid #f2f2f2;
+  font-size: 1.7rem;
+  color: black;
+}
+nav a:hover {
+  color: #0065fc;
+  border-color: #0065fc;
+}
+header span {
+  padding-top: 4.5rem;
+  padding-right: 2rem;
+}
+header span a {
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+/* fin header */
+/* search_bar */
+.search_main {
+  margin-top: 5rem;
+}
+
+.search_main h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+}
+
+.search_main p {
+  margin-top: 15px;
+  font-size: 1.6rem;
+}
+
+.searchBar {
+  margin-top: 3rem;
+  height: 5rem;
+}
+
+.font_mark {
+  background-color: #f2f2f2;
+  border-radius: 1.5rem 0 0 1.5rem;
+  width: 5rem;
+  flex-shrink: 0;
+}
+
+.font_mark i {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.searchInput {
+  border: 1px solid #f2f2f2;
+  padding: 0 0 0 1.5rem;
+  font-size: 1.1rem;
+  width: 23rem;
+}
+
+.searchInput::placeholder {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.searchButton {
+  width: 13rem;
+  background-color: #0065fc;
+  border: none;
+  padding: 0;
+  border-radius: 0 1.5rem 1.5rem 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.searchButton span {
+  font-size: 1.5rem;
+}
+.searchButton i {
+  display: none;
+}
+
+/* FIN SEARCH_BAR */
+/* FILTER */
+.textFilter {
+  align-self: center;
+  font-size: 1.8rem;
+}
+
+.filters {
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+.filter {
+  align-items: center;
+  height: 5rem;
+  border: 0.2rem solid #f2f2f2;
+  border-left: none;
+  margin-left: 2.4rem;
+  padding-right: 2rem;
+  border-radius: 3rem;
+}
+
+.filter span {
+  padding-left: 2rem;
+}
+
+.filter:hover {
+  cursor: pointer;
+  /* border-color: #0065fc; */
+  box-shadow: 0 0 0.7rem 0 #0065fc;
+  color: #0065fc;
+}
+
+.filterList {
+  flex-wrap: wrap;
+}
+
+.iconFilter {
+  position: relative;
+  right: 1px;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  background-color: #deebff;
+}
+
+.iconFilter i {
+  margin: auto;
+  color: #0065fc;
+}
+
+.logement {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.icon3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 100%;
+  /* align-self: flex-end; */
+}
+.icon3 i {
+  color: #0065fc;
+  font-size: 1rem;
+}
+
+.logement p {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+/******************HEBERGEMENTS MARSEILLE**************/
+.card_hotel {
+  display: flex;
+  justify-content: space-between;
+}
+.card_marseille {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card_rent {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  width: 65%;
+  height: auto;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+.card_rent h2 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+.card_marseille {
+  margin-top: 1.5rem;
+}
+.card-hebergement {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  width: 30%;
+  min-width: 15rem;
+  height: 17.5rem;
+  padding: 4px 4px 8px 4px;
+  box-shadow: 0 0 0.3rem rgba(114, 109, 109);
+}
+.card_img_mars {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.card_info_hebergement {
+  margin-left: 1rem;
+}
+.card_text_hebergement p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: black;
+  padding: 1rem 0;
+}
+.card_text_hebergement h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: black;
+}
+.card_title {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.more {
+  margin: 2rem 0;
+}
+.more a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.card_star {
+  color: #0065fc;
+}
+/***********LES PLUS POPULAIRES*****************/
+.card_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_title .fas {
+  font-size: 2rem;
+}
+.card_more_popular {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  width: 33%;
+  height: auto;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+.card_popular {
+  display: flex;
+  background-color: #fff;
+  margin: 2rem 0;
+  width: 100%;
+  height: 11rem;
+  padding: 0.4rem 0.4rem 0.8rem 0.4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.3rem rgba(114, 109, 109, 0.2);
+}
+.card_img_popular {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+.link_popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_info_hebergement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.2rem;
+}
+.card_star_popular {
+  margin-left: 1rem;
+  font-size: small;
+  color: #0065fc;
+}
+.text_hotel_populaire {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.text_hotel_populaire p {
+  margin-top: 1rem;
+}
+/* ******ACTIVITIES********* */
+#activities {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+#activities h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+#activities h3 {
+  font-size: 1.5rem;
+  margin: 0.9rem 0 -0.7rem 1rem;
+  height: auto;
+  color: #000;
+}
+.activity {
+  display: flex;
+  justify-content: space-between;
+}
+.couple {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+  height: 450px;
+}
+
+.card_activity,
+.card_activities {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.3rem rgba(114, 109, 109, 0.2);
+}
+
+.card_activity {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 450px;
+}
+.card_activities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+}
+
+.img_activity {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.img_activities {
+  width: 100%;
+  height: 77%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* ############FOOTER############## */
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  text-decoration: none;
+  height: 20rem;
+  padding-right: 25%;
+  line-height: 3rem;
+  padding-bottom: 8rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer_class li {
+  margin: 0 2rem;
+}
+.footer_class h4 {
+  font-size: 1.8rem;
+}
+footer li a {
+  color: #000;
+}
+li a:hover {
+  text-decoration: none;
+  color: #0065fc;
+}
+.apropos {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+/***********FIN FOOTER********* */
+
+/*****MEDIA QUERIES*************/
+
+@media screen and (max-width: 930px) {
+  .card_hotel {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .card_rent {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .card_more_popular {
+    width: 100%;
+  }
+}
+
+/********TABLET***********/
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav_anchor {
+    flex-basis: 100%;
+    order: 3;
+  }
+  #nav_anchor a {
+    width: 50%;
+    border-top: none;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+  #nav_anchor a:hover {
+    color: #0065fc;
+    border-color: #0065fc;
+  }
+  header span {
+    order: 2;
+    padding-top: 5px;
+  }
+}
+
+/********IPHONE 8*********************/
+@media screen and (max-width: 425px) {
+  /****************** HEADER *********************/
+  header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav_anchor {
+    flex-basis: 100%;
+    order: 3;
+    margin-top: -3rem;
+  }
+  #nav_anchor a {
+    width: 50%;
+    border-top: none;
+    border-bottom: 0.2rem solid #f2f2f2;
+    padding-bottom: 2rem;
+    cursor: pointer;
+  }
+  #nav_anchor a:hover {
+    color: #0065fc;
+    border-color: #0065fc;
+  }
+  header span {
+    order: 2;
+    padding-top: 0.5rem;
+  }
+
+  /***************** SECTION SEARCH************** */
+  .search_main {
+    width: 90%;
+    margin: 3rem auto 0;
+  }
+  .search_main h1 {
+    font-size: 1.7rem;
+  }
+  .search_main p {
+    font-size: 1.4rem;
+  }
+
+  .searchBar {
+    width: 32.5rem;
+    margin: 0 auto;
+  }
+  .searchButton span {
+    display: none;
+  }
+  .searchButton .fa-search {
+    display: block;
+  }
+  .searchButton {
+    width: 5rem;
+  }
+
+  /***************** SECTION FILTER *********************/
+  .iconFilter {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .textFilter {
+    margin-left: 2.8rem;
+  }
+  .filter {
+    height: 4rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  /**************** SECTION LOGEMENT CARD RENT ET POPULAR **************/
+  .logement {
+    margin-left: 2rem;
+  }
+  .card_rent {
+    background-color: #fff;
+    width: 100%;
+  }
+  .card_rent h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .card-hebergement {
+    width: 100%;
+    box-shadow: 0 0 1rem 0.3rem #d3d3d3;
+  }
+
+  /***********ACTIVITES**************/
+  #activities {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #activities h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  .activity {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card_activity {
+    width: 90%;
+    height: 200px;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 1rem 0.3rem #d3d3d3;
+  }
+  .card_activities {
+    box-shadow: 0 0 1rem 0.3rem #d3d3d3;
+  }
+  .couple {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  /*************FOOTER*********************/
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+}
